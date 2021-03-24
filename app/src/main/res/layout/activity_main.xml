@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firstNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/firstNumberLabel"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNumber"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number|textPersonName|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/firstNumberLabel"
+        app:layout_constraintStart_toEndOf="@+id/firstNumberLabel" />
+
+    <TextView
+        android:id="@+id/secondNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/second_numberLabel"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/firstNumberLabel"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumberLabel" />
+
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number|textPersonName|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/secondNumberLabel"
+        app:layout_constraintEnd_toEndOf="@+id/firstNumber" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/minusText"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/plus"
+        app:layout_constraintEnd_toStartOf="@+id/mul"
+        app:layout_constraintStart_toEndOf="@+id/plus" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="@string/devideText"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/plus"
+        app:layout_constraintEnd_toEndOf="@+id/secondNumber" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/plusText"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/secondNumberLabel"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumberLabel" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/multiplyText"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/plus"
+        app:layout_constraintEnd_toStartOf="@+id/div" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/resultText"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/plus" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultLabel"
+        app:layout_constraintEnd_toEndOf="@+id/div"
+        app:layout_constraintTop_toTopOf="@+id/resultLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

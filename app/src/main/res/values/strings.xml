@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="firstNumberLabel">First Number</string>
+    <string name="second_numberLabel">Second Number</string>
+    <string name="plusText">+</string>
+    <string name="minusText">-</string>
+    <string name="multiplyText">*</string>
+    <string name="devideText">/</string>
+    <string name="resultText">Result:</string>
+</resources>
